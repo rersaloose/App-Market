@@ -6,7 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import {  HttpClientModule  } from '@angular/common/http';
 import { SpinnerComponent } from './Components/spinner/spinner.component';
 import { SelectComponent } from './Components/select/select.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,  ReactiveFormsModule, } from '@angular/forms';
 
 
 
@@ -18,16 +18,19 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     RouterModule,
     CommonModule,
     HttpClientModule,
+   
     FormsModule,
   ],
   exports:[
     NavbarSharedComponent, 
     SpinnerComponent,
     SelectComponent,
-    FormsModule
+    ReactiveFormsModule,
+  
   ]
 })
 export class SharedModule { }

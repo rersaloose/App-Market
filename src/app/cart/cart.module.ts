@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { ProductsModule } from '../Market-User/products.module';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -17,12 +18,13 @@ import { ProductsModule } from '../Market-User/products.module';
     CommonModule,
     SharedModule,
     RouterModule,
- 
+    ProductsModule,
+    FormsModule
   ],
   exports:[
     CartComponent,
     RouterModule,
-    CartComponent
+  
   ]
 })
 export class CartModule { }

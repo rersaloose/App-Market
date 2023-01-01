@@ -8,7 +8,11 @@ import { Component, Input, OnInit, Output,EventEmitter } from '@angular/core';
 })
 export class SelectComponent  {
 @Input() tittle:string="";
+@Input() select:string="";
 @Input()data:any[]=[];
+@Input()all:boolean=true;
+
+
 @Output() slectedValue = new EventEmitter()
 constructor(){}
 

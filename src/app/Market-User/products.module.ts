@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { SharedModule } from '../shared/shared.module';
 import { ProductComponent } from './Components/product/product.component';
 import { RouterModule } from '@angular/router';
+import { FormsModule,  } from '@angular/forms';
 
 
 
@@ -19,11 +20,15 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     CommonModule,
     SharedModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+   
+    
   ],
   exports:[
     AllProductComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+      ProductComponent
   ]
 })
 export class ProductsModule { }
