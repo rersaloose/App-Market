@@ -11,8 +11,6 @@ export class SelectComponent  {
 @Input() select:string="";
 @Input()data:any[]=[];
 @Input()all:boolean=true;
-
-
 @Output() slectedValue = new EventEmitter()
 constructor(){}
 

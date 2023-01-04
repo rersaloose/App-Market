@@ -25,7 +25,7 @@ export class CartAdminComponent {
       start: [''],
       end: [''],
     });
-    this.getcarts()
+    this.apply()
   }
   getcarts() {
     this.cartservice.getallCarts().subscribe((res: any) => {

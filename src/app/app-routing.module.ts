@@ -8,9 +8,9 @@ import { ProductDetailsComponent } from './Market-User/Components/product-detail
 import { ProductComponent } from './Market-User/Components/product/product.component';
 
 const routes: Routes = [
-  {path:"product",component:ProductAdminComponent},
+  {path:"product",component:AllProductComponent},
   {path:"details/:id",component:ProductDetailsComponent},
-  {path:"cart",component:CartAdminComponent},
+  {path:"cart",component:CartComponent},
   {path:"**",redirectTo:"cart",pathMatch:"full"}
 ];
 
